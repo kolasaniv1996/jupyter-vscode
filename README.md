@@ -11,3 +11,13 @@ Basic familiarity with Docker and Jupyter configuration.
 
 Conclusion
 This setup allows seamless integration of code-server within Jupyter Lab
+
+
+
+
+When creating the environment, use the following command:
+jupyter lab --allow-root
+and arguments:
+--NotebookApp.base_url=/${RUNAI_PROJECT}/${RUNAI_JOB_NAME} --NotebookApp.token=''
+
+This allows you to access Vscode within jupyter lab.
